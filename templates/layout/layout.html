@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{ title }}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/1.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  
+  
+  
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">rozsoft.tech@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>0033 7586 433 50</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://twitter.com/RozanaAlam1" class="twitter" target="_blank"> <i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100086691246182" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/rozsoft2022/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/rozsoft-tech/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCTocoSTp6xJsCaRkTIg-Vzg/featured" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center" style="background-color: #a8cff0;">
+    <div class="container d-flex align-items-center justify-content-between" >
+
+      <h1 class="logo"><a href="{% url 'home' %}"><img src="{% static 'assets/img/1.png' %}" alt="">RozSoft<span>.Tech</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/img/1.png' %}" alt=""></a> -->
+
+      <nav id="navbar" class="navbar ">
+        <ul>
+          <li><a class=" nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+          
+          <li><a class="nav-link scrollto" href="{% url 'about' %}">About Us</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'project' %}">Projects</a></li>
+          <li class="dropdown"><a href="{% url 'technology' %}"><span>Technology</span> </a>
+            <ul >
+              <li class="d-flex justify-content-center text-primary"><h5 >Front End</h5></li>
+              <li class="d-flex justify-content-center"><a href="#">HTML</a></li>
+              <li class="d-flex justify-content-center"><a href="#">CSS</a></li>
+              <li class="d-flex justify-content-center"><a href="#">BOOTSTRAP</a></li>
+              <li class="d-flex justify-content-center"><a href="#">JavaScript</a></li>
+              <li class="d-flex justify-content-center"><a href="#">ReactJs</a></li>
+            
+              <li><h5 class="d-flex justify-content-center text-primary">Back End</h5></li>
+              <li class="d-flex justify-content-center"><a  href="#">Python </a></li>
+              <li class="d-flex justify-content-center"><a href="#">Java</a></li>
+              <li class="d-flex justify-content-center"><a href="#">PHP</a></li>
+              <li class="d-flex justify-content-center text-primary"><h5>FrameWorks</h5></li>
+              <li class="d-flex justify-content-center"><a href="#">Laravel</a></li>
+              <li class="d-flex justify-content-center"><a href="#">Django</a></li>
+              
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="{% url 'job' %}">Job Opportunity</a></li>
+          
+          <li class="dropdown"><a href="{% url 'service' %}"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">IoT</a></li>
+              <li><a href="#">Software Development</a></li>
+              <li><a href="#">Website and Web App Development</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">E-Commerce</a></li>
+              <li><a href="#">Cloud Integration </a></li>
+              <li><a href="#">IT Consulting</a></li>
+              <li><a href="#">Graphics Design</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Content Create</a></li>
+              <li><a href="#">Video Editing</a></li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contact Us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'price' %}">Pricing</a></li>
+        </ul>
+
+        
+        
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+ 
+  {% block body %}
+    
+  {% endblock body %}
+
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4 ><span style="color: #17a2b8;">Address</span></h4>
+            <p>
+              304 Uttar Kawnnara Saturia <br>
+              Dhaka 1810, Bangladesh<br>
+              
+              
+             
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4><span style="color: #17a2b8;">Phone Number</span></h4>
+            <p>
+              
+              +880 1943430515 (Bangladesh)<br> 
+              +33 758643350 (Franch)<br>
+             
+              
+              
+             
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4><span style="color: #17a2b8;">Email</span></h4>
+            <p>info@rozsoftdt.com</p>
+          <p>rozsoft.tech@gmail.com</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="color: #17a2b8;">Our Social Networks</h4>
+            
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/RozanaAlam1" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100086691246182" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/rozsoft2022/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+              
+              <a href="https://www.linkedin.com/company/rozsoft-tech/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCTocoSTp6xJsCaRkTIg-Vzg/featured" class="linkedin" target="_blank"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>RozSoft.Tech</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">Designed by <a href="#">RozSoft<span>.Tech</span></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="{% static 'assets/faq/script.js' %}"></script>
+
+</body>
+
+</html>

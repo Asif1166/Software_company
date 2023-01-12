@@ -1,0 +1,176 @@
+{% extends "layout/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <h3>Check our <span>Portfolio</span></h3>
+          <p>We are already works on 10 projects worldwide, we have now more than 50 happy clients</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              `
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-data-science">Data Science</li>
+              <li data-filter=".filter-it-security">It security</li>
+              <li data-filter=".filter-e-commerce">E-commerce</li>
+              <li data-filter=".filter-management">Management Software</li>
+              <li data-filter=".filter-card"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/vasa.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Learning Management System (LMS)</h4>
+              <p>Web-based Technology used to plan, implement and assess French language  learning process in Bangla.</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/portfolio/resturent.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Online resturent management website</h4>
+              <p>Website</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/portfolio/resturent2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Online resturent management website</h4>
+              <p>Website</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data-science">
+            <img src="{% static 'assets/img/portfolio/datascience.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Text Analysis</h4>
+              <p>NLP sentiment analysis for text</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data-science">
+            <img src="{% static 'assets/img/portfolio/datascience2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Bank Note Analysis</h4>
+              <p>Bank note analysis with machine learning</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data-science">
+            <img src="{% static 'assets/img/portfolio/data_science_1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Data visualisation</h4>
+              <p>Business data visualisation project</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-it-security">
+            <img src="{% static 'assets/img/portfolio/shutterstock.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Standard Certificate provide</h4>
+              <p>For Websites we also provide Standard Certificate</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          
+
+         
+          
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <img src="{% static 'assets/img/portfolio/hospital-management-system-sm.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Online Medical Laboratory Management System</h4>
+              <p>Medical Test Reports delivered to customers via online</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <img src="{% static 'assets/img/portfolio/Hospital-management-system.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Hospital Management System</h4>
+              <p>All Patients & Doctors Management System</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <img src="{% static 'assets/img/portfolio/smart-school-management-software.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Online School Management System</h4>
+              <p>All Teachers & Students online Class Management System</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-e-commerce">
+            <img src="{% static 'assets/img/portfolio/e-commerce-2.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Products e-commerce site</h4>
+              <p>Dynamic Website</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-e-commerce">
+            <img src="{% static 'assets/img/portfolio/ecommerce-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Clothing E-commerce Site</h4>
+              <p>Dynamic website</p>
+              <!-- <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+  
+{% endblock body %}
+
